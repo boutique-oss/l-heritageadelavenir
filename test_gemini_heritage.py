@@ -31,7 +31,7 @@ print(f"Modèle : Héritage — Coût total : {HERITAGE_TOTAL} €")
 print("Envoi de la requête à Gemini…")
 
 response = client.models.generate_content(
-    model="gemini-2.0-flash-preview-image-generation",
+    model="gemini-2.5-flash-image",
     contents=[prompt],
     config=types.GenerateContentConfig(
         response_modalities=["TEXT", "IMAGE"],
